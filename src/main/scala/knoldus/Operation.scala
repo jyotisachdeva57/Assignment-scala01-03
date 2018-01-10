@@ -39,14 +39,14 @@ class Operation {
 
     listInternal(list)
   }
-
-  def kthElement(element: Int, list: List[Int]): Int = {
-    list match {
-      case Nil => -1
-      case list if (element < (list.length) && element >= 0) => list(element)
-      case _ => -1
-    }
+ def kthElement(element: Int, list: List[Int]): Int = {
+      list match {
+        case head if(element==0)=> list.head
+        case head ::tail => kthElement(element - 1, tail)
+        case _ => throw new NoSuchElementException
+      }
   }
+ 
 
   def area(shape: String, first: Int, second: Int, f: (Int, Int) => Int): String = {
     val shapenew = shape.toLowerCase
