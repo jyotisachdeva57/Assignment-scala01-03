@@ -33,7 +33,7 @@ object MenuLauncher {
     print("third element of list1 is ")
     print(obj.kthElement(element, list1))
     print("\n")
-    print("area of rectangle and parallelogram using higher order function is ")
+    print("area Of rectangle and parallelogram using higher order function is ")
     print(obj.area("rectangle", lvalue1, lvalue2, (a, b) => a * b))
     print("\n")
     print("area of rhombus using higher order function ")
